@@ -1,0 +1,14 @@
+{
+	"ImportPath": "github.com/danhigham/simple-go-webapp",
+	"GoVersion": "go1.6",
+	"Deps": [
+		{
+			"ImportPath": "github.com/gorilla/context",
+			"Rev": "14f550f51af52180c2eefed15e5fd18d63c0a64a"
+		},
+		{
+			"ImportPath": "github.com/gorilla/mux",
+			"Rev": "854d482e26505d59549690719cbc009f04042c2e"
+		}
+	]
+}
