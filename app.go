@@ -9,7 +9,7 @@ import (
 func main() {
 
   rtr := mux.NewRouter()
-  rtr.HandleFunc("/", sayHello).Methods("GET")
+  rtr.Handle("/", rootHandler()).Methods("GET")
 
   http.Handle("/", rtr)
 
@@ -25,6 +25,8 @@ func Log(handler http.Handler) http.Handler {
     })
 }
 
-func sayHello(w http.ResponseWriter, r *http.Request) {
-  w.Write([]byte("Hello, World!"))
+func rootHandler() http.Handler {
+  return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+    w.Write([]byte("Hello, World!"))
+  })
 }
