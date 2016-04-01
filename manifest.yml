@@ -5,4 +5,4 @@ applications:
   instances: 2
   host: simple-go-webapp
   buildpack: go_buildpack
-  command: go run app.go
+  command: godep run app.go
