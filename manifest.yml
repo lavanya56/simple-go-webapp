@@ -1,6 +1,7 @@
 ---
 applications:
 - name: go-webapp
-  memory: 1G
-  instances: 2
+  memory: 128MB
+  instances: 1
   host: simple-go-webapp
+  command: bin/simple-go-webapp
