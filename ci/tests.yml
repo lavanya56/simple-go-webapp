@@ -9,4 +9,4 @@ image_resource:
 
 run:
   path: go
-  args: test
+  args: ['test']
