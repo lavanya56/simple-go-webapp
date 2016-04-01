@@ -4,5 +4,3 @@ applications:
   memory: 1G
   instances: 2
   host: simple-go-webapp
-  buildpack: go_buildpack
-  command: godep run app.go
