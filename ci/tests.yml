@@ -11,5 +11,5 @@ inputs:
 - name: simple-go-webapp
 
 run:
-  path: go
-  args: ['test']
+  path: bash
+  args: ['-c', 'cd simple-go-webapp; go test']
